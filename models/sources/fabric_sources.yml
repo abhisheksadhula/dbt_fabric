@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: fabric_bronze
+    database: raw          # Fabric Warehouse name
+    schema: dbo
+    tables:
+      - name: customers
+        description: "Raw customers table loaded into Fabric"
+        columns:
+          - name: id
+            tests:
+              - not_null
+              - unique
