@@ -1,5 +1,20 @@
-# you shouldn't commit these into source control
-# these are the default directory names, adjust/add to fit your needs
+# =========================================================
+# dbt – credentials & user-specific files
+# =========================================================
+profiles.yml
+.user.yml
+
+# Python virtual environment
+dbt-env/
+venv/
+.env/
+
+# dbt artifacts
 target/
-dbt_packages/
 logs/
+dbt_packages/
+
+# OS junk
+__pycache__/
+*.pyc
+.DS_Store
