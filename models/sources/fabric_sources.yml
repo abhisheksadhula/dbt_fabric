@@ -12,3 +12,15 @@ sources:
             tests:
               - not_null
               - unique
+
+      - name: orders
+        description: "Raw orders table from source systems"
+        loaded_at_field: ORDER_DATE
+
+        freshness:
+          warn_after:
+            count: 1
+            period: day
+          error_after:
+            count: 2
+            period: day

@@ -8,6 +8,7 @@ profiles.yml
 dbt-env/
 venv/
 .env/
+airflow-env/
 
 # dbt artifacts
 target/
